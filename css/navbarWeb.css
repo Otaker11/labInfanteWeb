@@ -1,0 +1,156 @@
+  .container{
+    margin-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100px;
+    width: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+ 
+  }
+  .list-navbar{
+    display:  flex;
+    justify-content: space-between;
+    width: auto;
+    max-width: auto;
+    height: 96px;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    border-radius: 15px;
+    align-self: center;
+    align-items: center;
+  }
+  .infante-Footer{
+    margin-left: 45px;
+    height: 70px;
+    width: 200px;
+  }
+  .nav-bar {
+    background-color: #01335c;
+    width: auto;
+    max-width: auto;
+    height: 96px;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    border-radius: 15px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-bar li {
+    height: 100%;
+    width: 140px;
+    padding-inline: 10px;
+    align-items: center;
+    align-self: center;
+    align-items: center;
+  }
+  
+  .nav-bar li a {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  
+  .nav-bar .has-dropdown ul li a {
+    padding: 8px;
+  }
+
+  .logo{
+   margin-top: 20px;
+  }
+  .logo-infante{
+    object-fit: fill;
+    height: 70px;
+    width: 200px;
+  }
+  .nav-bar li a:hover {
+    background-color: #002747;
+    color: #cbe05c;
+    border-radius: 15px;
+    transition: background 550ms, box-shadow 750ms;
+  }
+ 
+  .dropdown {
+    background-color: #002747;
+    color: #fff;
+    padding: 0;
+    list-style: none;
+    display: none;
+    border-radius: 15px;
+  }
+  
+  .dropdown li a {
+    color: #fff;
+    font-size: 13px;
+   
+  }
+  
+  .dropdown li a:hover {
+    background-color: #002747;
+    color: #cbe05c;
+  }
+  
+  .nav-bar li.has-dropdown:hover .dropdown {
+    color: #fff;
+    display: block;
+   
+  }
+
+  .div-image{
+    display: none;
+    
+  }
+  
+  @media screen and (min-width: 0px) and (max-width: 1023px) {
+.list-navbar{
+  flex-direction: column;
+ padding: 0;
+ height: auto;
+ gap: 10px;
+ display: none;
+}
+.div-image{
+  display: flex;
+  border: solid white;
+  border-radius: 10px;
+}
+.div-image:hover{
+  background-color: #cbe05c;
+  width: auto;
+  height: auto;
+  border: solid white;
+  border-radius: 10px;
+  transition: background 550ms, box-shadow 750ms;
+}
+
+.nav-bar{
+  height: auto;
+  width: auto;
+  
+}
+
+.container{
+  margin-bottom: 250px;
+  
+}
+
+.logo{
+  margin-top: 0px;
+ }
+  }
+
+  @media screen and (min-width: 1023px){
+    .list-navbar{
+      display: flex;
+    }
+  } 

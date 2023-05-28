@@ -1,0 +1,97 @@
+
+.articles2 {
+    display: relative;
+    max-width: auto;
+    padding-inline: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    margin-right: 500px;
+    padding-bottom: 50px;
+}
+
+.cardPaciente {
+    background: #1f6cab;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 0px 0px 0px 300px;
+    width: 890px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.cardPaciente:after,
+.cardPaciente:before {
+    content: '';
+    height: 100%;
+    width: 35%;
+    background: #024b86;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-clip-path: polygon(0 0, 70% 0, 100% 50%, 70% 100%, 0 100%);
+    clip-path: polygon(0 0, 70% 0, 100% 50%, 70% 100%, 0 100%)
+}
+
+.cardPaciente:after {
+    height: 90%;
+    width: 32%;
+    background: #cbe05c;
+    transform: translateY(-70%);
+    top: 50%;
+    left: 30px;
+    z-index: -2;
+}
+
+.cardPaciente .foto-paciente {
+    background: #cbe05c;
+    line-height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 7%
+}
+
+.cardPaciente .card-detalles {
+    padding: 20px 0 20px 20px;
+    border-bottom: 3px solid #cbe05c;
+}
+
+.cardPaciente .title {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0
+}
+
+.cardPaciente .post {
+    color: #ffffff;
+    font-size: 17px
+}
+
+.cardPaciente .card-contenido {
+    margin: 0;
+    padding: 10px 0 10px 25px;
+    list-style: none;
+    display: block
+}
+
+.cardPaciente .card-contenido li {
+    color: #cbe05c;
+    font-size: 15px;
+    margin-bottom: 3px
+}
+
+.cardPaciente .card-contenido li span {
+    color: #ffffff;
+    font-weight: 600;
+    margin-right: 7px;
+    display: inline-block
+}
+

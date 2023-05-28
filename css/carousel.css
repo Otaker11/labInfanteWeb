@@ -1,0 +1,140 @@
+.carousel-container {
+    width: 800px;
+    height: 265px;
+    margin: 100px auto;
+    position: relative;  
+  }
+
+  .carousel-box {
+    display: none;
+  }
+  
+  .carousel {
+    width: 800px;
+    margin: 100px auto;
+    padding: 32px 48px 32px 86px;
+    background-color: #cbe05c;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 86px;
+    transition: background 1550ms, box-shadow 750ms;
+  }
+
+  .carousel:hover {
+    background-color: #002747;
+
+  }
+  
+  .imgC {
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    transform: scale(1.5);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  }
+  .testimonial {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    color: #000000;
+    transition: background 1550ms, box-shadow 750ms;
+  }
+
+  .testimonial:hover {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    color: #ffffff;
+  }
+  .testimonial-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+
+  .testimonial-job {
+    font-size: 12px;
+  }
+
+  .testimonial-job:hover {
+    font-size: 12px;
+  }
+  
+  /* CONTROLS */
+  .btnC {
+    background-color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /* CENTER ICON */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn--left {
+    /* In relation to PARENT ELEMENT */
+    left: 0;
+    top: 50%;
+    /* Inrelation to ELEMENT ITSELF */
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn--right {
+    right: 0;
+    top: 50%;
+    /* Inrelation to ELEMENT ITSELF */
+    transform: translate(50%, -50%);
+  }
+  
+  .btn-icon {
+    height: 24px;
+    width: 24px;
+    stroke: #cbe05c;
+  }
+  
+  .btnC:hover,
+  .btnC:active {
+    background-color: #e6fcf5;
+  }
+  
+  .dots {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 32px);
+    /* Space between dots */
+    display: flex;
+    gap: 12px;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    border: 2px solid #cbe05c;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot--fill {
+    background-color: #cbe05c;
+  }
+  
+  @media screen and (max-width: 860px) {
+    .carousel-container {
+      width: 420px;
+      height: 535px;
+    }
+    .carousel {
+      width: 420px;
+      height: 535px;
+      padding: 32px 48px 32px 48px;
+      flex-direction: column;
+    }
+  }
