@@ -20,7 +20,7 @@ sr.reveal(
     );
 
     sr.reveal(
-      ".flowT, .rowMain, .doble-contenido, .tituloPrincipal, .carousel-container",
+      ".flowT, .rowMain, .doble-contenido, .tituloPrincipal, .carousel-container, .containerMain, .listFlow, .flow",
       {
         origin: "top",
         interval: 50,

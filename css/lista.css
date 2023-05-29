@@ -1,0 +1,109 @@
+ol{
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+}
+
+ol ol{
+    margin: 0 0 0 2em;
+}
+.lista{
+    margin-left: 120px;
+    margin-right: 120px;
+    font-size: 13px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+} 
+
+.rounded-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #cbe05c;
+    color: #000000;
+    text-decoration: none;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    border-radius: .3em;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;	
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.rounded-list a:hover{
+    background: #002747;
+    color: white;
+}
+
+.rounded-list a:hover:before{
+    background: #002747;
+    -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);	
+}
+
+.rounded-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;	
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #cbe05c;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+    .lista{
+        text-align: center;
+        margin-left: 120px;
+        margin-right: 120px;
+        font-size: 12px;
+        font-weight: 100;
+    } 
+    
+    .rounded-list a{
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em 2em;
+        *padding: .4em;
+        margin: .5em 0;
+        background: #cbe05c;
+        text-decoration: none;
+        -moz-border-radius: .3em;
+        -webkit-border-radius: .3em;
+        border-radius: .3em;
+        -webkit-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;	
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+}

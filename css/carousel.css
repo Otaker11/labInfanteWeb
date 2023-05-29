@@ -51,14 +51,32 @@
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 32px;
+    text-align: justify;
+  }
+
+  .testimonial-text3 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .testimonial-text2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    text-align: justify;
   }
 
   .testimonial-job {
     font-size: 12px;
   }
 
-  .testimonial-job:hover {
-    font-size: 12px;
+  .testimonial-job2 {
+    font-size: 21px;
+    margin-top: 20px;
   }
   
   /* CONTROLS */
