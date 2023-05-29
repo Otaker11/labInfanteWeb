@@ -3,7 +3,10 @@ body {
 	color: rgba(255, 255, 255);
   overflow-x: hidden;
 }
+.contact-input{
 
+	border-radius: 10px;
+  }
 .footer-links{
 border: solid #ffffff;
 border-radius: 20px;
@@ -44,28 +47,6 @@ text-align: center;
 	text-align: justify;
   }
 
-  .formForgot::before,.formForgot::after {
-	background: #024b86;
-	position: absolute;
-	content: "";
-	width: 1000px;
-	height: 215px;
-	transition: all 0.8s ease;
-	border-color: black;
-	border: 2px solid black;
-	
-  }
-  .formLogin::before,.formLogin::after {
-	background: #024b86;
-	position: absolute;
-	content: "";
-	width: 1010px;
-	height: 350px;
-	transition: all 0.8s ease;
-	border-color: black;
-	border: 2px solid black;
-  }
-
   .formContacto::before,.formContacto::after {
 	background: #024b86;
 	position: absolute;
@@ -77,17 +58,6 @@ text-align: center;
 	border: 2px solid black;
   }
  
-  .formRegistro::before,.formRegistro::after {
-	background: #024b86;
-	position: absolute;
-	content: "";
-	width: 1000px;
-	height: 740px;
-	transition: all 0.8s ease;
-	border-color: black;
-	border: 2px solid black;
-   
-  }
   
   .form::before {
 	z-index: -2;
@@ -256,9 +226,8 @@ text-align: center;
 	.form {
 		display: flex;
 		flex-direction: column;
-		width: 445px;
-		padding-left: 10px;
-		margin-left: 170px;
+		width: 500px;
+		margin-left: 90px;
 		padding-top: 50px;
 		text-align: justify;
 	  }
@@ -267,7 +236,7 @@ text-align: center;
 		background: #024b86;
 		position: absolute;
 		content: "";
-		width: 500px;
+		width: 300px;
 		height: 350px;
 		transition: all 0.8s ease;
 		border-color: black;
@@ -396,5 +365,30 @@ text-align: center;
 		font-weight: bolder;
 		transition: background 750ms, box-shadow 750ms;
 	  }
-	 
+
+	  .formContacto::before,.formContacto::after {
+		background: #024b86;
+		position: absolute;
+		content: "";
+		width: 560px;
+		height: 520px;
+		transition: all 0.8s ease;
+		border-color: black;
+		border: 2px solid black;
+	  }
+
+  .form::before {
+	z-index: -2;
+	background: #cbe05c;
+	border-radius: 60px;
+	transform: translateX(-4.5rem) translateY(-4.5rem);
+	border: 2px solid #cbe05c;
+	border-color: black;
+  
+  }
+
+  .contact-input{
+	width: 500px;
+	border-radius: 10px;
+  }
 }
